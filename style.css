@@ -1,0 +1,135 @@
+/* 1. Загальні налаштування (щоб нічого не "з'їжджало") */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Важливо для правильних розмірів */
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f1f9ed; /* Світло-салатовий фон сторінки */
+    color: #2c3e2d;
+    line-height: 1.6;
+}
+
+/* 2. Шапка сайту */
+header {
+    background-color: #a3d9a5; /* Теплий салатовий */
+    background-image: linear-gradient(to bottom right, #a3d9a5, #8dbd8c);
+    color: #1a331a;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 3. Навігація */
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #a3d9a5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #4a7a4a;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* 4. Основний контент */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #388e3c;
+    border-bottom: 2px solid #e8f5e9;
+    padding-bottom: 10px;
+    margin: 25px 0 15px 0;
+}
+
+/* 5. Таблиця (як на фото з Viber) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+table th, table td {
+    border: 2px solid #a3d9a5; /* Товсті салатові лінії */
+    padding: 15px;
+    vertical-align: top;
+}
+
+table th {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #fafdfa; /* Легке виділення парних рядків */
+}
+
+/* 6. Списки та висновки */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.highlight {
+    background-color: #f9fff9;
+    border: 1px solid #c8e6c9;
+    border-left: 8px solid #66bb6a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* 7. Підвал */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #618a61;
+    font-size: 0.9rem;
+}
+
+/* Адаптація для телефонів */
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
